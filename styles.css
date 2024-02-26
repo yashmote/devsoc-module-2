@@ -1,0 +1,178 @@
+body {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    background-color: #1f2120;
+    color: #f4f4f4be;
+    font-size: 1.125rem;
+    font-family: 'Georgia', sans-serif;
+    font-weight: 545;
+}
+table td, table th, table tr {
+
+    border-collapse: collapse;
+    padding-right : 0.5rem;
+    padding-left: 0.5rem;
+}
+a {
+    color: #d68c1ebe;
+    text-decoration: none;
+}
+a:hover {
+    color: #f4f4f4be;
+    opacity: 60%;
+}
+
+#form {
+    margin-top: 1rem    ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#basicData {
+
+    box-sizing: border-box;
+    width: 30vw;
+    height: 30vh;
+    border-radius: 1rem;
+    padding: 2.5vh 1.5vw 2.5vh 1.5vw;
+    margin: 0.25vh 0.25vw 0.25vh 0.25vw;
+}
+
+
+#profilePicture {
+    grid-area : left;
+    align-items: center;
+    justify-content: center;
+    
+
+}
+#name {
+    grid-area : header;
+    text-align: center;
+}
+#basicdetails {
+    grid-area : right;
+    align-items: center;
+}
+
+#userData {
+    display:grid;
+    justify-content: center;
+    grid-template-rows: 1 fr 3 fr;
+    grid-template-columns: 1 fr 1 fr;
+    align-items: center;
+    gap:0.75 rem 0.25rem;
+    grid-template-areas: 
+    'left header header'
+    'right right right';
+}
+
+
+.repoDetails {
+    box-sizing: border-box;
+
+    width: 30vw;
+    height: 10rem;
+    border-radius: 1rem;
+}
+
+
+.boxintable {
+    border: 0.3rem solid #2a2b2f;
+    box-sizing: border-box;
+    background-color: #2a2b2f;
+    width: 30vw;
+    height: 11rem;
+    border-radius: 1rem;
+    padding: 2.5vh 1.5vw 2.5vh 1.5vw;
+    margin: 0.75vh 0.25vw 0.75vh 0.25vw;
+}
+
+#userData {
+
+    box-sizing: border-box;
+
+    background-color: #1f2120;
+    width: 30vw;
+
+    height: 30vh;
+
+    border-radius: 1rem;
+    padding: 2.5vh 1.5vw 1vh 1.5vw;
+    margin: 0.25vh 0.25vw 0.25vh 0.25vw;
+}
+
+@media only screen and (max-width: 992px) {
+    #userData{
+        border: 0.3rem solid #1f2120;
+        box-sizing: border-box;
+        background-color: #1f2120;
+        width: 45vw;
+        height: auto;
+
+        border-radius: 1rem;
+        padding: 2.5vh 1.5vw 1vh 1.5vw;
+        margin: 0.25vh 0.25vw 0.25vh 0.25vw;
+    }
+    .boxintable {
+        border: 0.3rem solid #2a2b2f;
+        box-sizing: border-box;
+        background-color: #2a2b2f;
+        width: 45vw;
+        height: auto;
+        border-radius: 1rem;
+        padding: 2.5vh 1.5vw 1vh 1.5vw;
+        margin: 0.25vh 0.25vw 0.25vh 0.25vw;
+    }
+
+}
+
+@media only screen and (max-width: 768px) {
+    #userData{
+            border: 0.3rem solid #1f2120;
+            box-sizing: border-box;
+
+            background-color: #1f2120;
+            width: 60vw;
+            height: auto;
+            border-radius: 1rem;
+            padding: 2.5vh 1.5vw 1vh 1.5vw;
+            margin: 0.25vh 0.25vw 0.25vh 0.25vw;
+    }
+    .boxintable {
+        border: 0.3rem solid #2a2b2f;
+        box-sizing: border-box;
+        background-color: #2a2b2f;
+        width: 60vw;
+        height: auto;
+        border-radius: 1rem;
+        padding: 2.5vh 1.5vw 1vh 1.5vw;
+        margin: 0.25vh 0.25vw 0.25vh 0.25vw;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    #userData{
+            border: 0.3rem solid #1f2120;
+            box-sizing: border-box;
+            background-color: #1f2120;
+            width: 90vw;
+            height: auto;
+            border-radius: 1rem;
+            padding: 2.5vh 1.5vw 1vh 1.5vw;
+            margin: 0.25vh 0.25vw 0.25vh 0.25vw;
+    }
+    .boxintable {
+        border: 0.3rem solid #2a2b2f;
+        box-sizing: border-box;
+        background-color: #2a2b2f;
+        width: 90vw;
+        height: auto;
+        border-radius: 1rem;
+        padding: 2.5vh 1.5vw 1vh 1.5vw;
+        margin: 0.25vh 0.25vw 0.25vh 0.25vw;
+    }
+}
